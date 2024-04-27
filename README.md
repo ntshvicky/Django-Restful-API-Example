@@ -36,3 +36,10 @@ REST_FRAMEWORK = {
 10. register api in admin - update code of api->admin.py
 
 11. generate superadmin - python manage.py createsuperuser
+
+
+# to push and pull
+find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+git add .
+git commit -m "okay"
+git push origin master
